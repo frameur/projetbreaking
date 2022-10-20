@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Breaking bad page responsive</title>
+  </head>
+  <body>
+    <section class="banner">
+      <header>
+        <div class="toggle"></div>
+        <a href="#" class="logo"><img src="./images/logobad.png" alt="" /></a>
+      </header>
+      <div class="content">
+        <img src="./images/breakingbad5.png" class="textimg" alt="" />
+
+        <p>
+          <span class="titlefrom">Breaking Bad</span> <br />
+          <span class="datefrom">2008 | 16+ | 5 saisons | Séries US </span>
+          <br />
+          <span class="contentfrom"
+            >Un professeur de chimie atteint d'un cancer s'associe à un ancien
+            élève pour fabriquer et vendre de la méthamphétamine afin d'assurer
+            l'avenir financier de sa famille.</span
+          >
+          <br />
+          <span class="distrifrom"
+            >Avec : Bryan Cranston, Aaron Paul, Anna Gunn <br />
+            Créateurs : Vince Gilligan</span
+          >
+        </p>
+        <a
+          href="https://www.youtube.com/watch?v=lrcqbavlbyQ&ab_channel=kimi"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn"
+          ><ion-icon name="play-circle-outline"></ion-icon>Watch Trailer</a
+        >
+      </div>
+      <div class="clip">
+        <div class="clipBox">
+          <a
+            href="https://www.youtube.com/watch?v=ZQjqFd2iIWs&ab_channel=DaroVHS"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="./images/breakingbad3.jpg" alt="" />
+            <ion-icon name="play-circle-outline"></ion-icon
+          ></a>
+        </div>
+        <div class="clipBox">
+          <a
+            href="https://www.youtube.com/watch?v=YGf-a3mvzqw&t=10s&ab_channel=CloseUp-Cin%C3%A9maetS%C3%A9ries"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="./images/breakingbad2.jpg" alt="" />
+            <ion-icon name="play-circle-outline"></ion-icon
+          ></a>
+        </div>
+      </div>
+      <ul class="socialIcon">
+        <li>
+          <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+        </li>
+        <li>
+          <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+        </li>
+        <li>
+          <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+        </li>
+      </ul>
+    </section>
+
+    <ul class="navigation">
+      <a href="#" class="logo"><img src="./images/logobad.png" alt="" /></a>
+      <li><a href="#">Saisons</a></li>
+      <li><a href="#">Cast</a></li>
+      <li><a href="#">Shop</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script>
+      let menuToggle = document.querySelector('.toggle')
+      let navigation = document.querySelector('.navigation')
+      menuToggle.onclick = function () {
+        menuToggle.classList.toggle('active')
+        navigation.classList.toggle('active')
+      }
+    </script>
+  </body>
+</html>
